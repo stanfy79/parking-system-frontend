@@ -6,10 +6,10 @@ import './App.css';
 async function App() {
 
 
-  const [plete, setLicencePlete] = useState([''])
-  const [reason, setReason] = useState([''])
-  const [note, setNote] = useState([''])
-  const [fileUrl, setFileUrl] = useState([''])
+  const [plete, setLicencePlete] = useState('')
+  const [reason, setReason] = useState('')
+  const [note, setNote] = useState('')
+  const [fileUrl, setFileUrl] = useState('')
   
     let submit = async(e) => {
       e.preventDefault()
