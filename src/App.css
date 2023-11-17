@@ -38,6 +38,7 @@
     margin: 5px;
     border-radius: 30px;
     border: none;
+    overflow: hidden;
     outline: none;
     background: white;
 }
@@ -60,6 +61,7 @@
 }
 .displayName {
     color: dimgray;
+    overflow: hidden;
 }
 .section-2 span > input {
     width: 90%;
