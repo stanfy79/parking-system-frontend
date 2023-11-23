@@ -12,13 +12,13 @@
     width: 360px;
     position: relative;
     border-radius: 20px;
-    border: 1px solid #2b2b2b;
+    border: 1px solid #b9b9b9;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     background: #e0e0e0;
-    box-shadow: -3px 5px 4px 0px #00000040;
+    box-shadow: -5px 5px 7px 0px #00000040, 5px -5px 7px 0px #00000040;
     flex-flow: row wrap;
 }
 .section-1 span > input {
@@ -35,6 +35,8 @@
     width: 90%;
     height: 186px;
     padding: 15px;
+    font-family: sans-serif;
+    font-weight: lighter;
     margin: 5px;
     border-radius: 30px;
     border: none;
@@ -68,6 +70,8 @@
     height: 40px;
     padding: 15px;
     margin: 10px;
+    font-family: sans-serif;
+    font-weight: lighter;
     border-radius: 30px;
     border: none;
     outline: none;

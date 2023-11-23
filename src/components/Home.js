@@ -21,7 +21,7 @@ export default function Home() {
   useEffect(() => {
     const displayName = document.querySelector('.displayName');
     const input = document.querySelector('.fileInput');
-    var fileURL = document.querySelector('.fileURL');
+    var fileURL = document.querySelector('.fileURL').value;
 
     input.addEventListener("change", (e) => {
       const fileName = input.files[0];
@@ -37,9 +37,9 @@ export default function Home() {
         }
         
        let fileLink = reader.result;
-       fileURL.value = fileLink;
-       console.log(fileURL.value);
-       alert(fileURL.value)
+       fileURL = fileLink;
+       console.log(fileURL);
+       alert(fileURL)
       });
       reader.readAsDataURL(fileName);
     });
@@ -72,7 +72,7 @@ export default function Home() {
                                 <span className="upload">
 
                                 <ErrorBoundary fallback="Error boy">
-                                <input type="text" onChange={(e) =>{setFileUrl(e.target.value)}} name="fileURL" className="fileURL" value="" hidden />
+                                <input type="text" onInput={(e) =>{setFileUrl(e.target.value)}} name="fileURL" className="fileURL" value="" hidden />
                                 <input type="file" name="attachtment" className="fileInput" />
                                 <button type="button" className="formAttachment" >Attachtment</button>
                                 </ErrorBoundary>
